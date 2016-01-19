@@ -1,0 +1,7 @@
+.DS_Store
+/.git
+/.idea
+/index.js
+/events.js
+/npm-debug.log
+/node_modules
