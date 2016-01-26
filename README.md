@@ -52,7 +52,7 @@ class Manager extends BaseEvents {
 
 const manager = new Manager();
 
-manager.on('component.add', () => {
+manager.on('component.add', ({ component }) => { 
  // ....
 });
 ```
