@@ -1,6 +1,6 @@
 # Base events
 
-Provide easy way to subscribe and fire events. Super light component
+Provides easy way to subscribe and emit events. Super light component
 
 `npm install --save base-events`
  
