@@ -66,3 +66,25 @@ manager.on('component.add', ({ component }) => {
 
 ### Community
 You are always welcome for ideas and pull requests :)
+
+
+### TODO
+
+- [ ] Event keys as patterns. If you are interested in this - please comment here https://github.com/tuchk4/base-events/issues/1
+
+```js
+const events = new BaseEvents();
+
+events.on('a', () => { ... });
+events.on('a.*', () => { ... });
+events.on('a.b.c', () => { ... });
+events.on('a.*.c', () => { ... });
+
+
+events.emit('a', params); // available listeners: a
+events.emit('a.b.c', params); // available listeners: a.* / a.b.c / a.*.c
+events.emit('a.B.c', params); // available listeners: a.*.c
+
+events.emit('x.y.z', params); // no listeners
+events.emit('a', params);  // available listeners: a
+```
