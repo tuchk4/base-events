@@ -1,5 +1,7 @@
 # Base events
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/tuchk4/base-events.svg)](https://greenkeeper.io/)
+
 Provides easy way to subscribe and emit events. Super light component
 
 `npm install --save base-events`
